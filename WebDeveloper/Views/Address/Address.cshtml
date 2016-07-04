@@ -1,0 +1,17 @@
+﻿@model IEnumerable<WebDeveloper.Model.Address>
+@using WebDeveloper.Helpers
+@{
+    ViewBag.Title = "Address";
+}
+<h2>Address</h2>
+
+<ul>
+    @foreach (var address in Model)
+    {
+        <li>
+            <span>@address.AddressID</span>
+            <span>@address.AddressLine1</span>
+            <span>Extension: @CustomHelper.DisplayEmptyExtension(address.AddressLine2)</span>
+        </li>
+    }
+</ul>

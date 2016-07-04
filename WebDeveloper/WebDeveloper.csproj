@@ -162,10 +162,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionFilters\LogActionFilter.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AddressController.cs" />
+    <Compile Include="Controllers\AddressTypeController.cs" />
+    <Compile Include="Controllers\ContactTypeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
+    <Compile Include="Controllers\StateProvinceController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -219,10 +225,28 @@
     <Content Include="scss\styles.scss" />
     <Content Include="scss\base\_site.scss" />
     <Content Include="scss\helpers\_colors.scss" />
+    <Content Include="Views\AddressType\Index.cshtml" />
+    <Content Include="Views\AddressType\Create.cshtml" />
+    <Content Include="Views\AddressType\Edit.cshtml" />
+    <Content Include="Views\AddressType\Delete.cshtml" />
+    <Content Include="Views\Address\Index.cshtml" />
+    <Content Include="Views\Address\Create.cshtml" />
+    <Content Include="Views\Address\Edit.cshtml" />
+    <Content Include="Views\Address\Delete.cshtml" />
+    <Content Include="Views\ContactType\Index.cshtml" />
+    <Content Include="Views\ContactType\Create.cshtml" />
+    <Content Include="Views\ContactType\Edit.cshtml" />
+    <Content Include="Views\ContactType\Delete.cshtml" />
+    <Content Include="Views\StateProvince\Index.cshtml" />
+    <Content Include="Views\StateProvince\Create.cshtml" />
+    <Content Include="Views\StateProvince\Edit.cshtml" />
+    <Content Include="Views\StateProvince\Delete.cshtml" />
+    <Content Include="Views\Address\Address.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Person\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

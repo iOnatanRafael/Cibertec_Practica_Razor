@@ -24,6 +24,7 @@ namespace WebDeveloper.Model
 
         public Guid rowguid { get; set; }
 
+        [Display(Name = "Modified Date")]
         public DateTime ModifiedDate { get; set; }
 
         

@@ -1,21 +1,14 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace WebDeveloper.Model
+namespace WebDeveloper.Model.DTO
 {
-    
-
-    [Table("Person.Address")]
-    public partial class Address
+    public class AddressModelView
     {
-        
-        public Address()
-        {
-            BusinessEntityAddress = new HashSet<BusinessEntityAddress>();
-        }
-
         public int AddressID { get; set; }
 
         [Required]
@@ -37,14 +30,6 @@ namespace WebDeveloper.Model
         [StringLength(15)]
         [Display(Name = "Postal Code")]
         public string PostalCode { get; set; }
-        
-        public Guid rowguid { get; set; }
 
-        public DateTime ModifiedDate { get; set; }
-
-        public virtual StateProvince StateProvince { get; set; }
-
-        
-        public virtual ICollection<BusinessEntityAddress> BusinessEntityAddress { get; set; }
     }
 }
